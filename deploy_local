@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# copy deploy.rb to local machine
+sudo scp -r facoteam@175.41.130.195:/home/facoteam/bash/deploy.rb /home/
+
+# copy Capfile to local machine
+sudo scp -r facoteam@175.41.130.195:/home/facoteam/bash/Capfile /home/
+
+# copy deploy_local to local machine
+sudo scp -r facoteam@175.41.130.195:/home/facoteam/bash/deploy_local /home/
+
+echo "-----------------------------------------------------------------"
+echo " Copy the deploy.rb and Capfile from /home/ in /config"
+echo " Change username and password in database.yml file to 'root' and 'antapict'"
+echo " Commit all changes to git"
+echo " Run ./deploy_local_cap {store_name}"
+echo "-----------------------------------------------------------------"
+
+
+

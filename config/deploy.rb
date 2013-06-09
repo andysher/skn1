@@ -3,7 +3,8 @@ require "rvm/capistrano"
 set :rvm_ruby_string, '1.9.3'
 
 server "175.41.130.195", :web, :app, :db, :primary => true
-
+set :assets_role, [:web, :app]
+load 'deploy/assets' 
 set :application, "skn1"
 set :user, "facoteam"
 set :deploy_to, "/home/facoteam/stores/#{application}"

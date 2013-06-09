@@ -37,6 +37,6 @@ production:
   reconnect: false
   database: skn1_production
   pool: 5
-  username: facoteam1
-  password: anchanto
+  username: root
+  password: antapict
   socket: /var/run/mysqld/mysqld.sock
